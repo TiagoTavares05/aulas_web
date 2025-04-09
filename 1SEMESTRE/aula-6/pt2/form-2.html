@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/pt2/CSS/form2.css">
+</head>
+<body>
+
+<form method="post" action="https://professores.unisanta.br/sobrino/scripts/mostra-v2.php">
+    
+    <h1>Contato</h1>
+    
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email">
+    
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone" data-mask="(00) 00000-0000">
+
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" data-mask="000.000.000-00">
+    
+    <label for="data-nascimento">Data de Nascimento</label>
+    <input type="date" name="data-nascimento" id="data-nascimento" >
+    
+    <label for="motivo-contato">Motivo do Contato</label>
+    <textarea name="motivo-contato" id="motivo-contato" maxlength="21"></textarea>
+
+    <label for="escolaridade">Escolaridade</label>
+    <select name="escolaridade" id="escolaridade" ><!--required> -->
+        <option value="">Escolha...</option>
+        <option value="ef">Ensino Fundamental</option>
+        <option value="em">Ensino Médio</option>
+        <option value="es">Ensino Superior</option>
+        <option value="pg">Pós-Graduação</option>
+    </select>
+    
+    <fieldset>
+        <legend>Você é aluno do Santa?</legend>
+        <input type="radio" name="aluno-unisanta" value="s" id="saluno"><label for="saluno">Sim</label>
+        <input type="radio" name="aluno-unisanta" value="n" id="naluno"><label for="naluno">Não</label>
+    </fieldset>
+
+    <fieldset>
+        <input type="checkbox" name="linguagem[]" value="c#" id="c#"><label for="c#">c#</label> 
+        <input type="checkbox" name="linguagem[]" value="java" id="java"><label for="java">java</label> 
+        <input type="checkbox" name="linguagem[]" value="python" id="python"><label for="python">python</label> 
+        <input type="checkbox" name="linguagem[]" value="php" id="php"><label for="php">PHP</label> 
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- biblioteca online que carrega a abaixo -->
+<!-- tem que ser necessariamente nessa ordem -->
+<!-- <script type="text/javascript" src="js/jquery.mask.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+"use strict";
+
+let p1= 5;
+const arrayNotas =[5.5, 7.5, 8, 10, 9, 5]
+console.log("Tipo", typeof arrayNotas);
+
+const obj1 ={
+    nome: "Alexandre Sobrino",
+    idade: 28,
+    Aluno: true,
+};
+
+//PARA MUDAR QUALQUER UM DESSES DADOS JÁ DECLARADOS ANTERIORMENTE, É SÓ UTILIZAR ESSE MÉTODO. DIFERENTEMENTE DO C#, QUE PRECISA MUDAR NO PRÓPRIO METODO O VALOR
+obj1.idade = 30;
+
+//MESMO NÃO CRIANDO ANTERIORMENTE, AO MOSTRAR NA TELA O OBJETO, ESSE CAMPO ESTARÁ INCLUÍDO NA "TABELA"
+obj1.altura = 1.84
+
+//TAMBÉM HÁ COMO APAGAR CAMPOS DO OBJETO DA SEGUINTE MANEIRA
+delete obj1.altura;
+
+
+//mostra todos os campos com seus valores. Isso é uma característica do método "log" que concatena todos os campos e mostra todos juntos
+console.log(obj1);
+
+
+//PARA MOSTRAR APENAS UM CAMPO REFERENTE AO OBJETO. UTILIZA-SE A SEGUINTE SINTAXE
+console.log(obj1.nome);
+
+//PARA DESCOBRIR O COMPRIMENTO DO NOME, UTILIZA-SE: (CONTA ESPAÇO)
+console.log(obj1.nome.length);
+
+//TIPO DA PROPRIEDADE
+console.log("Tipo do valor da propriedade de nome", typeof obj1.nome);
+
+const obj2 ={
+    nome: "Tiago Tavares",
+    idade: 20, 
+    Namorado: true
+};
+
+//PARA NÃO TER QUE PASSAR 300 VALORES COMO ARGUMENTO PARA UM MÉTODO ESPECÍFICO, PODE-SE USAR UM ARRAY DE VALORES (OBJETOS, SEGUNDO O SOBRINO?? ACHO QUE OBJETO PARA ELE É A MESMA COISA QUE ARGUMENTOS). QUANDO A FUNÇÃO RECEBER ESSE ARRAY, TERÁ VÁRIOS OBJETOS DENTRO DELE
+
+const arrayObj = [];
+
+//.PUSH COLOCA NO COMEÇO
+arrayObj.push(obj1); 
+arrayObj.push(obj2);
+
+//DESSA FORMA, FICA MEIO DESORGANIZADO O QUE É CADA LINHA MOSTRADA NA TELA, NAO DA PARA SABER QUAL É QUAL OBJETO, VARIÁVEL
+console.log(arrayObj);
+
+//COM O TABLE FICA MAIS ORGANIZADO
+console.table(arrayObj);
+
+//SE QUISER SÓ SABER UM DOS OBJETOS QUE ESTÁ DENTRO DO ARRAYOBJ, UTILIZA-SE O INDICE
+console.log(arrayObj[1]);
+
+//PARA SABER APENAS UMA PROPRIEDADE(VARIÁVEL) DE UM OBJETO ESPECIFICIO, UTILIZA-SE O INDICE COMBINADO COM O .PROPRIEDADE
+console.log(arrayObj[1].idade);
+
+//TAMBÉM DA PARA DELETAR A PARTIR DO ARRAY COM A PROPRIEDADE VISTA ANTES "DELETE"
+
+console.log();
+console.log("Objetos JS para JSON");
+
+//SINTAXE PARA CONVERTER OBJETO PARA JSON. ESSA VARIÁVEL CRIADA VAI GUARDAR A TRANSFORMAÇÃO PARA STRING DO OBJETO EM QUESTÃO
+const strJSON = JSON.stringify(arrayObj)
+
+//NOTE QUE DESS VEZ, DIFERENTE DOS OUTROS CONSOLE.LOG DO ARRAY, AGORA TODOS OS CAMPOS (PROPRIEDADES OU VARIÁVEIS) ESTÃO ENTRE ASPAS, OU SEJA, SÃO TRANSFORMADOS EM STRING
+console.log(strJSON);
+
+//VALIDADOR DA STRING: https://jsonlint.com/
+
+console.log();
+console.log("JSON para objetos JS:");
+
+//ISSO SIGIFNICA QUE A STRING strJSON VOLTARA A SER OBJETO
+const arrayObjJSON = JSON.parse(strJSON);
+
+//NOTE QUE AGORA TEM A PRESENÇA DO INDICE, PROVANDO QUE O TEXTO FOI CONVERTIDO PARA ARRAY, OU SEJA, UM OBJETO.
+console.table(arrayObjJSON);

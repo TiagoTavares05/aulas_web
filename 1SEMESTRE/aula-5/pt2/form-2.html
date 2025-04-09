@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+<form method="post" action="https://professores.unisanta.br/sobrino/scripts/mostra-v2.php">
+    <h1>Contato</h1>
+    <p>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone">
+        <br>
+    </p>
+    <p>
+        <label for="motivo-contato"><b>motivo do contato</b></label><br>
+        <textarea name="motivo-contato" id="motivo-contato" rows="5" cols="45" maxlength="21"></textarea>
+    </p>
+
+    <p>
+            <label for="escolaridade">Escolaridade</label><br>
+
+             <select name="escolaridade" id="escolaridade" ><!--required> -->
+                <option value="">Escolha...</option>
+                <option value="ef">Ensino Fundamental</option>
+                <option value="em">Ensino Médio</option>
+                <option value="es">Ensino Superior</option>
+                <option value="pg">Pós-Graduação</option>
+            </select>
+    </p>
+    
+    <fieldset >
+        <legend>Você é aluno do Santa?</legend>
+
+        <input type="radio" name="aluno-unisanta" value="s" id="saluno"><label for="saluno">Sim</label>
+        <input type="radio" name="aluno-unisanta" value="n" id="naluno"><label for="naluno">Não</label>
+
+    </fieldset><br>
+
+    <fieldset>
+        <input type="checkbox" name="linguagem[]" value="c#" id="c#"><label for="c#">c#</label> 
+
+        <input type="checkbox" name="linguagem[]" value="java" id="java"><label for="java">java</label> 
+
+        <input type="checkbox" name="linguagem[]" value="python" id="python"><label for="python">python</label> 
+
+        <input type="checkbox" name="linguagem[]" value="php" id="php"><label for="php">PHP</label> 
+
+
+    </fieldset>
+    <button type="submit">Enviar</button>
+
+
+</form>
+</body>
+
+</html>

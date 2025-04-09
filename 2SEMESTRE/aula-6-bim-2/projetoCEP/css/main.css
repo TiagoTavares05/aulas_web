@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, input, select, button {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+}
+
+h1 {
+	font-size: 35px;
+	width:fit-content;
+	color: dodgerblue;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+label {
+	font-weight: bold;
+}
+
+button, input {
+	display: block;
+	margin-bottom: 25px;
+	padding: 15px;
+	border: none;
+}
+
+input {
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 150px;
+}
+
+button	{
+	background-color: dodgerblue;
+	font-weight: bold;
+	border-radius: 10px;
+	color: white;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+	transition: 0.5s;
+}
+
+button:active {
+	background-color: white;
+	color: black;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu mundinho</title>
+    <style>
+       /* Folha de estilos interna */
+        /* ctrl +; -> atalho comentário */
+        /* seletor (OU SELETOR DE TIPO){
+            propriedade 1: valor1;
+            propriedade 2: valor2;
+        } */
+        /*p {
+            font-family: Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
+            /* existem propriedades que estão em teste, elas são reconhecidas por: ?????????????? */
+        
+
+        /* Pode-se usar agrupamento de seletores. Não é o mais indicado*/
+        /* 
+        h1, h2, table, ul, ol, address{
+
+
+        } */
+
+        /* DOM (DOCUMENT OBJECT MODEL) AO UTILIZAR ESSE SELETOR, VOCÊ "CHAMA" E CARACTERIZA TODOS OS SEUS DESCENDENTES, OU SEJA, QUEM ESTÁ DENTRO */
+
+        *{
+            /*margin: 0 0 0 20px;
+            CIMA, EMBAIXO, ESQUERDA, DIREITA. FORMA ABREVIADA*/
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 150%;
+            background-color: #000;
+            color: #797878;
+
+        }
+
+        h1{
+            font-size: 200%;
+            color: #ffffff;
+            /* a cor azul, por exemplo, pode ser abreviada. #0000ff se torna #00ff. Pode-se usar o sistema RGB (BB, 00, EE) */
+        }
+
+        img{
+            width: 30%;
+            height: 30%;
+            float: right; /*-> coloca o texto do lado da imagem */
+            margin-left: 30px;
+            border-radius: 10px;
+            /* border-style:solid;
+            border-color: #797878;
+            border-width: 3px; 
+            
+            --> FORMA ABREVIADA A SEGUIR SEPARADA POR ESPAÇOS
+            */
+
+            border: 3px solid #797878;
+
+            /*
+
+                margin: 15px;
+                margin-left: 20px;
+                ----> Nesse caso, não é somado os valores, o margin left sobrepõe o "margin"
+                
+            */
+        }
+
+        h2{
+            color: #FFFFFF;
+        }
+
+        a{
+            color: #ff0000;
+        }
+
+        a:hover{
+            color: #FFFFFF;
+        }
+
+        /* BOX MODEL 
+            Propriedades: -margin, - BORDER, - PADDING (margem interna),
+        */
+        .nav{
+            width: 100%;
+            height: 100%;
+            background-color: #991010;
+            display: flex;
+            justify-content: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-bottom: 30px;
+
+
+        }
+
+        /* pseudoclasse representada pelos 2 pontos -> a:hover (muda de cor ao passar o mouse em cima do link) */
+
+      th{
+          border: 3px solid #FFFFFF;
+          background-color: #ffffff;
+      }
+
+      td{
+        border: 3px solid #FFFFFF;
+      }
+
+      tr:hover{
+          background-color: #FFFFFF;
+          cursor:help;
+      }
+
+      table{
+          border-collapse:collapse;
+          /* tira os espaço entre as bordas da célula */
+      }
+
+      .hino{
+          height: 900px;
+          padding-right: 1000px;
+          padding-left: 10px;
+      }
+        
+
+
+    </style>
+
+    <head>
+<!--
+    p- paragrafo
+    h1- semantica
+    address - italico
+    br - break
+    <strong> - deixa em negrito
+    <em>phasis - deixa em italico
+    "HIPERTEXT" possibilidade de navegar a partir de links
+    <a> -> ancora
+        http -> hypertext transference protocol 
+        https -> camada extra de segurança
+        target ="_blank" -> atributo para abrir um link em uma nova guia
+        <a href ="https://wa.me/3313982272725?text=linda!!!!!!"
+        <a href="atividades-complementares.html">
+        mdn ((fundação)mozila development network) html ...
+-->
+<body>
+
+    <div class="nav">
+        <h1>São Paulo Futebol Clube |  Tricolor do Morumbis</h1>
+    </div>
+
+    <img src ="imgs/channels4_profile.jpg" alt="alunos unisanta">
+
+     <p>O tricolor paulista surgiu através da fusão de dois antigos clubes: o Paulistano, grande campeão no início do século XX e a Associação Atlética das Palmeiras, que se uniram em 1930 dando origem ao Clube Athlético São Paulo ou São Paulo da Floresta, como muitos o chamavam.</p>
+        
+     <p>O curso de <b><i>Sistemas de Informação da Unisanta</i></b> tem por objetivo capacitar o aluno a trabalhar com o desenvolvimento de sistemas, visandoe dsenvolver, implantar e gerenciar projetos nas áreas de Sistemas de TI.</p>
+        
+     <p>O curso de Sistemas de Informação, com aulas práticas desde o primeiro ano, trata a computação como uma atividade meio, visando à aplicação da computação na sociedade, através da organização e do uso da informação, o que propicia uma grande empregabilidade.</p>
+        
+     <p>Os acadêmicos mantêm contato com a realidade do mercado de trabalho por meio de <a href="atividades-complementares.html"> palestras, seminários e minicursos </a> empresas de tecnologia de ponta.</p>
+        
+     <p>Mais de 90% dos acadêmicos dos últimos anos fazem estágio ou já trabalham no setor de TI, em grandes empresas da Baixada Santista e também da capital. Diversos ex-alunos atuam em outros países, como Alemanha, Estados Unidos, Canadá e Costa Rica.</p>
+       
+   
+    <h2> HINO SÃO PAULO </h2>
+    
+    <div class="hino">
+
+        <p>Salve o tricolor paulista<br>
+            Amado clube brasileiro<br>
+            Tu és forte, tu és grande<br>
+            Dentre os grandes és o primeiro<br>
+            Tu és forte, tu és grande<br>
+            Dentre os grandes és o primeiro<br>
+            Ó tricolor<br>
+            Clube bem amado<br>
+            As tuas glórias<br>
+            Vêm do passado<br>
+            Ó tricolor<br>
+            Clube bem amado<br>
+            As tuas glórias<br>
+            Vêm do passado<br>
+            São teus guias brasileiros<br>
+            Que te amam ternamente<br>
+            De São Paulo tens o nome<br>
+            Que ostentas dignamente<br>
+            De São Paulo tens o nome<br>
+            Que ostentas dignamente<br>
+            Ó tricolor<br>
+            Clube bem amado<br>
+            As tuas glórias<br>
+            Vêm do passado<br>
+            Ó tricolor<br>
+            Clube bem amado<br>
+            As tuas glórias<br>
+            Vêm do passado</p>
+    
+    </div>
+
+    <h2> Vagas Disponíveis </h2>
+
+    <table>
+ 
+        <tr>    <th>Período</th>        <th>Vagas</th>  </tr>
+        <tr>    <td>Diurno</td>         <td>50</td>      </tr>
+        <tr>    <td>Noturno</td>        <td>100</td>   </tr>
+
+    </table>
+
+    <h2>Sites Relacionados</h2>
+<ul>
+    <li>
+        <a href="https://portaleducacional.unisanta.br">
+            Portal do Aluno
+        </a>
+    </li>
+    <li>
+        <a href="https://canaltalentos.unisanta.br/">
+            Canal de talentos
+        </a>
+    </li>
+</ul>
+    <ol>
+        <li>ablueblue</li>
+        <li>ablueblue</li>
+    </ol>
+    <h2>Vestibular</h2>
+    
+        
+    <p>Deseja ficar sabendo da abertura de inscrições para ingresso no curso? <a href="http://www.unisanta.br/vestibular" target ="_blank">Acesse este link.</a></p>
+    
+    <address>
+    <h5>Universidade Santa Cecília<br>
+    Rua Oswaldo Cruz, 277 - Boqueirão - Santos/SP<br>
+    CEP: 11045-907 | Telefones: (13) 3202-7100 / (13) 2104-7150<br>
+    Central do Vestibular: <a href="tel:+551332027101"> (13) 3202-7101</a><br>
+    <a href="http://www.unisanta.br" target ="_blank"> http://www.unisanta.br </a> <br>
+    </address>
+    
+</body>
+</html>

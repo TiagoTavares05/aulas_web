@@ -1,0 +1,18 @@
+CASTING = É O PARSE, TRANSFORMAR UM TIPO EM OUTRO
+
+existem formas de fazer isso, já que é lido como string -> Number (), +
+
+    ex 
+        const notaP1 = Number(p1.value);
+
+    ex2
+        const notaP2 = +p2.value;
+        MUITO INFORMAL
+
+    ex3
+        const notaP2 = parseFloat(p2.value);
+
+
+FUNÇÃO CONTROLADORA (CONTROLLER)
+
+-utiliza-se quando uma função parece estar executando mais eventos do que deveria

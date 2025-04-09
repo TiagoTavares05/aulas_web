@@ -1,0 +1,32 @@
+JS TEM OBJETO, OU SEJA, TEM PROPRIEDADE E VALORES
+-PODE POSSUIR COMPORTAMENTO
+-array é um objeto
+
+
+SINTAXE DE CRIAÇÃO DE OBJETO
+
+    const obj1 ={
+        nome: "Alexandre Sobrino",
+        idade: 28,
+        Aluno: true
+    };
+
+- nome que para estabelecer um valor para o campo, deve-se usar dois pontos ":" e não "=". Além disso, os campos são separados por virgula. Tem ponto e virgula após chaves
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+JSON (Javascript Object Notation)
+
+- Não tem como um código de C# que está rodando no momento acessar uma variável que foi criada em JS, isso ocorre pois um código não pode invadir a área da memória de outro programa. OBS: quando um programa é inicializado, o SO "guarda" um espaço na memória para ele, assim como cria pilhas (POO- luiz antonio, 1°bim)
+
+-Para fazer com que haja a troca de dados entre linguagem, transformou-se a notação de objeto do JS, transformou-se o objeto em txt (em string) e salvou-se no disco e na outra aplicação, a string é pegada e transformada novamente em objeto. Assim há como fazer a conexão entre linguagens. É a materialização do objeto o transformando em string
+
+- Formato texto e multiplataforma  (roda em qualquer SO E dispositivo, já que é só leitura de texto) para o intercâmbio de dados
+- Objeto JavaScript é a mesma coisa que Json?
+
+-OBJETO JS PRECISAM SE "STRINGUIFICAR" (TERMO OFICIAL: SERIALIZAÇÃO JSON) PARA SER JSON E DEPOIS A STRING PRECISA SE "OBJETIFICAR" (DESSERIALIZAÇÃO) PARA VIRAR OBJETO NOVAMENTE
+
+- VALIDA STRING JSON https://jsonlint.com/
+
+-AGORA QUE A STRING ESTÁ CRIADA, DEVE-SE SALVAR EM UM LOCAL   

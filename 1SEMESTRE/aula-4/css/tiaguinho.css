@@ -1,0 +1,233 @@
+
+    /* Folha de estilos externa */
+    /* ctrl +; -> atalho comentário */
+    /* seletor (OU SELETOR DE TIPO){
+        propriedade 1: valor1;
+        propriedade 2: valor2;
+    } */
+    /*p {
+        font-family: Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
+        /* existem propriedades que estão em teste, elas são reconhecidas por: ?????????????? */
+    
+
+    /* Pode-se usar agrupamento de seletores. Não é o mais indicado*/
+    /* 
+    h1, h2, table, ul, ol, address{
+
+
+    } */
+
+    /* DOM (DOCUMENT OBJECT MODEL) AO UTILIZAR ESSE SELETOR, VOCÊ "CHAMA" E CARACTERIZA TODOS OS SEUS DESCENDENTES, OU SEJA, QUEM ESTÁ DENTRO */
+
+    *{
+        /*margin: 0 0 0 20px;
+        CIMA, EMBAIXO, ESQUERDA, DIREITA. FORMA ABREVIADA*/
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 150%;
+        background-color: #000;
+        color: #797878;
+
+    }
+
+    h1{
+        font-size: 200%;
+        color: #ffffff;
+        /* a cor azul, por exemplo, pode ser abreviada. #0000ff se torna #00ff. Pode-se usar o sistema RGB (BB, 00, EE) */
+    }
+
+    img{
+        width: 30%;
+        height: 30%;
+        float: right; /*-> coloca o texto do lado da imagem */
+        margin-left: 30px;
+        border-radius: 10px;
+        /* border-style:solid;
+        border-color: #797878;
+        border-width: 3px; 
+        
+        --> FORMA ABREVIADA A SEGUIR SEPARADA POR ESPAÇOS
+        */
+
+        border: 3px solid #797878;
+
+        /*
+
+            margin: 15px;
+            margin-left: 20px;
+            ----> Nesse caso, não é somado os valores, o margin left sobrepõe o "margin"
+            
+        */
+    }
+
+    h2{
+        color: #FFFFFF;
+    }
+
+    a{
+        color: #ff0000;
+    }
+
+    a:hover{
+        color: #FFFFFF;
+    }
+
+    /* BOX MODEL 
+        Propriedades: -margin, - BORDER, - PADDING (margem interna),
+    */
+    .nav{
+        width: 100%;
+        height: 100%;
+        background-color: #991010;
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-bottom: 30px;
+
+
+    }
+
+    /* pseudoclasse representada pelos 2 pontos -> a:hover (muda de cor ao passar o mouse em cima do link) */
+
+    th{
+        border: 3px solid #FFFFFF;
+        background-color: #ffffff;
+    }
+
+    td{
+    border: 3px solid #FFFFFF;
+    }
+
+    tr:hover{
+        background-color: #FFFFFF;
+        cursor:help;
+    }
+
+    table{
+        border-collapse:collapse;
+        /* tira os espaço entre as bordas da célula */
+    }
+
+    .hino{
+        height: 900px;
+        padding-right: 1000px;
+        padding-left: 10px;
+    }
+
+    /* b{ 
+    background-color: yellow;
+}*/
+/* 
+a, b{
+    background-color: yellow;
+}
+    */
+
+    /* 
+    22/08
+
+    -Combinador de descendentes
+    descendentes diretos: filho, descendentes do body (por exemplo)
+
+    Seletor de Descendentes (forma incorreta de chamar, o certo é combinador). Forma mais correta: É o strong que está dentro do address
+    */
+
+    /* address strong{
+        background-color: yellow;
+    } */
+
+    /* ul a{ 
+        background-color: yellow;
+    } */
+
+    /*ou (li a), ou (ul li a), (h2 ul li a -> não funcionaria)  */
+
+    /* Combinador de filhos, ou descendentes diretos. utiliza o sinal ">" */
+
+    /* ul>li>a{
+
+    background-color: yellow;
+
+    } */
+
+    /* ul>a -> não funcionaria, pois esse combinador é apenas para filhos. Dá para combinar combinadores de filhos e descendentes. Por exemplo: ul li>a */
+
+    /* address a{
+        background-color: yellow;
+    } */
+
+
+    /* seletor de atributos*/
+
+/* [href]*/ 
+/* [href="http://www.unisanta.br"]  */
+
+/* [href^="http"]{
+    background-color: yellow;
+} */
+/* "Wildcards" (curingas)
+^ = "começa com"
+* =  possui em algum lugar
+*/
+
+/*seletores personalizados*/
+/*  Seletor de classe */
+/* link-especial{
+    background-color: yellow;
+} */
+/*Só é afetado quem for link */
+a.link-especial{
+    background-color:  var(--corPrimaria);
+}
+/* Seletor de id
+#titulo-exclusivo{
+    background-color: #ff0000;
+} */
+
+/* Especificidade */
+/* 
+    (id,class,tipo)
+
+    atributo style 1,0,0,0 *má pratica (na verdade todos tem 4, mas o w3c não escreve isso pois descarta a possibilidade de usar esse atributo por ser uma má prática)
+    id          1,0,0
+    class       0,1,0
+    tipo        0,0,1
+
+    ul li a{
+
+
+    }
+    0,0,3
+
+    a.link-especial{
+
+    }
+    0,1,1
+
+    ul#lista a.link:hover{
+
+
+    }
+    1,1,2
+*/
+/* !important */
+/* 
+DIRETIVA !important. Sobrescreve a diretiva original do browser. Se tiver um em um id e outro em uma class, o navegador volta para diretiva original e dá preferência para o id
+*/
+
+
+/* Variável css -> É bom usar para ser uma variável global
+*/
+
+:root{
+    --corPrimaria: #bbbb1b;
+    --corSecundaria: #95fa66;
+    --tamanhoMargem: 15px;
+    --tamanhoFonte: 20px;
+
+}

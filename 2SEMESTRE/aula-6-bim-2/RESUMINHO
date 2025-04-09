@@ -1,0 +1,22 @@
+quando o cep existe: retorna json com os dados, quando o cep não existe: retorna json com "erro" = "true"
+CEP INVÁLIDO? HTTP 400 ("BAD REQUEST") -> MAIOR QUE 9 OU ESPAÇO SLA
+
+
+O MÉTODO FETCH (SIGNIFICA BUSCAR)
+
+- Método que permite a solicitação de um recurso.
+-argumento obrigatório: a URL onde o recurso está.
+- o método fetch retorna uma promise (promessa). -> 
+- O que for retornado por esse método é um OBJETO que contém uma PROMISE
+
+MÉTODO json
+
+-gera um objeto em js a partir de uma entrada válida recebida no formato json
+
+- o médoto json também retorna uma promise
+
+TRY/CATCH 
+
+-com uma declaração try/catch podemos definir um bloco de instruções para testar (try)
+
+-caso uma exceção ocorra, podemos capturá-la (catch), especificando uma resposta. É lançada uma exceção 

@@ -1,0 +1,82 @@
+:root {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.integrante{
+    display: block;
+    margin: 10px 0px 0px 0px;
+    width: 327px;
+    height: 328px;
+    border-radius: 300px;
+}
+
+.formacao{
+    float: left;
+    height: 75px;
+    width: 100px;
+}
+
+a, p{
+    color: #000000;
+    font-size: 1.25rem;
+    margin: 0px;
+}
+
+a:hover{
+    color: #29f;
+}
+
+hr{
+  
+    border: solid 1px;
+    background-color: #000000;
+}
+
+h2{
+    margin-bottom: 3px;
+    margin-top: 30px;
+    
+}
+
+th{
+    border: solid 2px #000000;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px;
+}
+
+table td{
+    border: solid 3px #000000;
+    padding: 5px;
+
+}
+
+
+[type="email"] , label, textarea{
+    display: block;
+    width: 350px;
+    font-weight: bold; 
+}
+textarea{
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-top: 10px;   
+}
+
+button{
+    font-size: 1.125rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 8px;
+    border: solid;
+    height: 40px;
+    width: 80px;
+}
+
+#formacao2{
+    margin-top: 20px;
+}

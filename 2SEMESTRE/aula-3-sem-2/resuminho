@@ -1,0 +1,41 @@
+quando os argumentos passados tem um número inferior ao dos parametros da determinada função. No console aparecerá a mensagem "NaN" (Not a number) e o resultado da função = undefined
+
+parametro default = se os parametros não forem passados, a função considerará o parametro default:
+
+    "function soma (n1=0, n2=0){}"
+
+    Nesse caso, o valor a ser considerado será 0.
+
+    Se apenas um número for passado, ele substituirá o n1
+
+
+Expressão de função: quando atribui-se uma função a uma variável
+
+    Tem ponto e vírgula no final, pois a variável também está sendo declarada juntamente
+
+    Para chamar essa função, precisa-se chamar a variável e não a função em questão.
+    Ex: console.log("Soma", soma(3,8)) -> é o nome da variável e os argumentos são passados para a função dela.
+
+    Nesse caso, a função não precisa ter nome, apenas a variável. O nome disso é função anonima
+
+    O único motivo para a função funcionar quando ela tem nome e a variável também, é quando o recurso "recursividade" é utilizado, pois a chamada da própria função é feito por meio do nome da função e não da variável
+
+
+Operador ternário - O único que tem 3 operandos: 1°=(num%2==0)?, 2° = Par, 3° = Impar
+
+Função de Seta: sem o nome "function", adiciona-se "=>" e não precisa usar return quando tiver apenas uma linha, já que a função é obrigada a ter return. Além disso, não precisa ter parenteses quando tiver apenas um parametro.
+
+array é do tipo object
+
+assinatura do método:
+
+... (parametro rest). Signfica conjunto infinito de parametros
+
+Método unshift = adiciona mais posições no array
+
+
+Função de CALLBACK. função passada como argumento para outra função
+  
+   a chamada pode ser imediata (callback síncrono) ou em outro momento (callback assíncrono)
+
+FOREACH (é uma função de callback). Dentro dos parametros do método, o "element", que é uma função é chamado. Toda vez que a função principal é executada, o "element" também

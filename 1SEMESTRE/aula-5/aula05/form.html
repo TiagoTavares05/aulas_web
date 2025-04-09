@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!-- Este formulário será melhorado na próxima aula  -->
+
+    <!-- <form method="get">  MÉTODO IMPLÍCITO -->
+        <form method="post" action="https://professores.unisanta.br/sobrino/scripts/mostra-v2.php">
+
+
+            <!-- <label for="usuario"><b>Usuário</b></label><br> -->
+            <input type="text" name="usuario" id="usuario" size="10" maxlength="10" placeholder="Seu usuário" required="required"><br>
+            <br><input type="password"  name="senha" id="senha" size="10" maxlength="15" minlength="8" placeholder="Sua senha">
+            <br>
+            
+            <button type="submit">Enviar</button>
+            
+            <!-- Método antigo -->
+        <!-- <input type="submit" value="Entrar"> -->
+    
+    
+        <!-- <button type="reset">Limpar</button> -->
+        <!-- <button type="button">Validar</button> -->
+    </form>
+</body>
+
+</html>

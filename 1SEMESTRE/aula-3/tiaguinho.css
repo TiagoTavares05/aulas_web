@@ -1,0 +1,13 @@
+h1{
+    color: #79214d;
+    margin:auto;
+    
+}
+
+.nav{
+    width: 2000px;
+    height: 400px;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+}

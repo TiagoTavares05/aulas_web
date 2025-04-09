@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+}
+
+.back{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.isa{
+    background-color: aquamarine;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    justify-content: center;
+}

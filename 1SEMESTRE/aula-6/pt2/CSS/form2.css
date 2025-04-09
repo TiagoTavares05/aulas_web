@@ -1,0 +1,64 @@
+
+        body, select{
+
+            font-family:'Segoe-UI',-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1rem; 
+            /* 1 rem= 16px, 2 rem 32px... */
+
+        }
+
+        label, legend, button{
+            font-weight:bold;
+        }
+
+        fieldset label{
+            font-weight: normal;
+        }
+
+        label, button, legend{
+            font-weight: bold;
+            display: block;
+        }
+
+        fieldset>label{
+            display: inline;
+            font-weight: normal;
+        }
+
+        input, textarea, select, fieldset, button{
+
+            margin-bottom: 8px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 5px;
+            
+        }
+        /* ou #email -> chama id do input*/
+        [type="email"], textarea, fieldset{
+            width: 320px;;
+        }
+
+        textarea{
+            height: 100px;
+            resize: none; /*trava o textarea*/
+        }
+
+        button{
+            background-color: blue;
+            color: #fff;
+            padding:10px;
+            border: none;
+        }
+
+        button:hover{
+            background-color: black;
+            cursor: crosshair;
+        }
+
+        /* :focus{ */
+            /* para alterar só o formulário */
+        form :focus{
+            outline: 2px solid blue;
+        }
+
+        /* ctrl+f (procurar), ctrl + h (substituir), ctrl+ alt + enter -> substituir tudo */

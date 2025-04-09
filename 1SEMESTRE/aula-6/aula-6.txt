@@ -1,0 +1,41 @@
+ELEMENTOS DE NÍVEL DE BLOCO (BLOCK-LEVEL)-> toma conta do bloco todo
+h1,h2, p, fieldset, table, ul
+
+---------------------
+Elementos de nível de linha(inline) ->(aceita dividir o espaço com outros elementos)
+
+label, input, textarea, select, a, strong, em
+
+display: inline (irá fazer com que elementos de nível de bloco virem elementos de nível de linha
+
+display: block (o contrário)
+
+
+resize: trava (textarea)
+
+outline: substitui o border, não mexe com a propria borda
+form :focus (focus só no forms)
+
+button:hover
+
+seletor de atributo [type=""] não precisa de ""
+
+#id
+
+HTML
+CSS 
+JS
+
+jquery ->biblioteca javascript
+
+min= minificado (arquivo que foi reduzido)
+
+tag script -> tag que permite que no meio de um código html ou carregue um arquivo javascript a parte ou coloque um seu na sua página html
+
+CDN
+Content 
+delivery
+network
+
+
+cdnjs.com
